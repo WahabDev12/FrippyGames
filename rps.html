@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="rps.css">
+    <title>Frippy| RPS</title>
+</head>
+<body>
+    <br>
+    <br>
+    <div class="container">
+    <div class="header" style="font-size: 2rem;">Rock,Paper,Scissors
+        <br>
+        <small style="font-size:17px;">Let's get Swifty</small>
+    </div>
+
+    <div class="selections">
+
+        <button class="selection" data-selection="rock">✊  </button>
+        <button class="selection" data-selection="paper">✋</button>
+        <button class="selection" data-selection="scissors">🤞</button>
+
+    </div>
+    <div class="results">
+        <div class="">You
+            <span class="result-score" style="color:rgb(255, 20, 59)" data-your-score>0</span>
+
+        </div>
+        <div data-final-column>Computer
+            <span style="color:rgb(255, 20, 59)" class="result-score" data-computer-score>0</span>
+        </div>
+        <!--<div class="result-selection winner">✊</div>
+        <div class="result-selection">🤞</div>-->
+
+
+    </div>
+    <div class="footer">Copyright &copy; Abdul Wahab</div>
+</div>
+    <script src="rps.js"></script>
+</body>
+</html>
