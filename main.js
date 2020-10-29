@@ -13,7 +13,7 @@ closeMenu.addEventListener("click",close);
  }
 
  function close(){
-      mainMenu.style.top = "-100%"
+      mainMenu.style.top = "-200%"
  }
 
  //Emoji
