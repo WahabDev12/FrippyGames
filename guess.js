@@ -21,20 +21,21 @@ function guessNumber(){
         document.getElementById("input").value = "";
         document.getElementById("stats").innerHTML = "Your Number is " + myNumber + "\n" + "Bot Number is " + botNumber;
     }
+    
+    for(i=0;i< myNumber.length; i++){
+        if(parseInt(myNumber) == 0){
+            document.getElementById("result").innerHTML = "Number should be greater than 0";
+            document.getElementById("stats").innerHTML = "Try Again ↩️ "
+    
+        }
+        
 
-    if(parseInt(myNumber) == 0){
-        document.getElementById("result").innerHTML = "Number should be greater than 0";
-        document.getElementById("stats").style.display = "none";
+      else if(parseInt(myNumber) > 50){
+        document.getElementById("result").innerHTML = "Out Of Range ❌❌";
+        document.getElementById("stats").innerHTML = "Try Again  ↩️ "
 
+      }
     }
 
-    if(parseInt(myNumber) > 50){
-        document.getElementById("result").innerHTML = "You are out Of Range ❌❌ ";
-        document.getElementById("stats").style.display = "none";
-
     }
-
-}
-
-
 
