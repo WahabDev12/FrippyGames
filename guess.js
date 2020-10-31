@@ -21,6 +21,18 @@ function guessNumber(){
         document.getElementById("input").value = "";
         document.getElementById("stats").innerHTML = "Your Number is " + myNumber + "\n" + "Bot Number is " + botNumber;
     }
+    
+     if(parseInt(myNumber) == 0){
+        document.getElementById("result").innerHTML = "Number should be greater than 0";
+        document.getElementById("stats").style.display = "none";
+
+    }
+
+    if(parseInt(myNumber) > 50){
+        document.getElementById("result").innerHTML = "You are out Of Range ❌❌ ";
+        document.getElementById("stats").style.display = "none";
+
+    }
 
 }
 
