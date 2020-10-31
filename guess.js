@@ -28,7 +28,7 @@ function guessNumber(){
 
     }
 
-    if(parseInt(myNumber) > 50){
+    if(parseInt(myNumber) >= 51){
         document.getElementById("result").innerHTML = "You are out Of Range ❌❌ ";
         document.getElementById("stats").style.display = "none";
 
