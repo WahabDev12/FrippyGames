@@ -16,19 +16,19 @@ function guessNumber(){
         document.getElementById("stats").innerHTML = "Your Number is " + myNumber + "\n" + "Bot Number is also " + botNumber;
     }
 
-    else if{
+    else{
         document.getElementById("result").innerHTML = "You Lost ❌❌";
         document.getElementById("input").value = "";
         document.getElementById("stats").innerHTML = "Your Number is " + myNumber + "\n" + "Bot Number is " + botNumber;
     }
-    
-     else if(parseInt(myNumber) == 0){
+
+    if(parseInt(myNumber) == 0){
         document.getElementById("result").innerHTML = "Number should be greater than 0";
         document.getElementById("stats").style.display = "none";
 
     }
 
-    else(parseInt(myNumber) >= 51){
+    if(parseInt(myNumber) > 50){
         document.getElementById("result").innerHTML = "You are out Of Range ❌❌ ";
         document.getElementById("stats").style.display = "none";
 
