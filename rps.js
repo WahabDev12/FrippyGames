@@ -11,12 +11,12 @@ const SELECTION = [
     },
     {
         name:"paper",
-        emoji: "✊ ",
+        emoji: "✋ ",
         beats: "rock"
     },
     {
         name:"scissors",
-        emoji: "✊ ",
+        emoji: "🤞 ",
         beats: "paper"
     }
 ]
