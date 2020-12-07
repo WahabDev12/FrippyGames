@@ -1,10 +1,9 @@
+window.addEventListener("load",()=>{
     const url = "http://api.quotable.io/random";
     const quoteDisplay = document.getElementById("data");
     const quoteInput = document.getElementById("input");  
     const timerElement = document.getElementById("timer");
     const displayScore = document.getElementById("score");
-
-
     quoteInput.addEventListener("input",()=>{
         const arrayQuote = quoteDisplay.querySelectorAll("span");
         const arrayValue = quoteInput.value.split("");
@@ -27,15 +26,13 @@
   
               }
         })
-
         let score = 0
         if(correct){
-            score++
             getNext()
             document.getElementById("input").value = null;  
+            score =+ 1;
         }
-        displayScore.innerHTML = `${score}`;
-        console.log(score)
+        displayScore.innerText = parseInt(score);
 
         
     })
@@ -56,7 +53,6 @@
         })
         startTimer()
     }
-    
     let startTime;
     function startTimer(){
         timerElement.innerText = 0;
@@ -70,4 +66,5 @@
         return Math.floor((new Date()-startTime)/1000)
     }
     getNext();
+})
  
